@@ -13,6 +13,4 @@ today I completed animation and corrected UI of webpage
 
 #DAY 3(28/Feb)
 Today I added Dark mode
-<img width="960" alt="Screenshot 2024-02-28 203228" src="https://github.com/vikasofficial100/hackslash_Webclone/assets/147232756/426b08ac-e5ff-4a95-8838-ec1ddabe0958">
-
-
+<img width="960" alt="Screenshot 2024-02-28 203228" src="https://github.com/vikasofficial100/hackslash_Webclone/assets/147232756/2c1d14c1-7e28-43f2-a599-f8fa8fb30487">
