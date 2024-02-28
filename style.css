@@ -21,12 +21,15 @@
 .collab{
     font-size: 1.5rem;
     color: white;
+    cursor: pointer;
+    transition: .2s
 }
 nav a{
     text-decoration: none;
     color: rgb(30, 30, 30);
     font-size: 1rem;
     padding: 1rem 0.75rem;
+    color: white;
 }
 .services{
     display: flex;
@@ -34,17 +37,11 @@ nav a{
 }
 .services-info-1{
     width: 50%;
-    /* background-color: aqua; */
 }
 .services-info-2{
     width: 50%;
     transform-style: preserve-3d;
     transition: transform 1s;
-    /* padding-top: 3.5rem; */
-    /* background-color: rgb(209, 104, 24); */
-}
-.services-info-2:hover{
-    transform:rotateY(180deg);
 }
 .child-ser-info{
     display: flex;
@@ -64,6 +61,7 @@ h2{
     margin: 3rem 0rem;
     padding: 0;
     line-height: 1.2em;
+    cursor: pointer;
 }
 h3{
     font-size: 1.2rem;
@@ -75,17 +73,19 @@ p{
     font-size: 1.3rem;
     font-weight: 800;
     margin-right: 2.2rem;
+    cursor: pointer;
+}
+.services-info-2:hover{
+    transform:rotateY(180deg);
 }
 div h2:hover{
     transform: scale(1.03);
     font-weight: 305;
+    transition: 0.1s;
 }
 p:hover{
    opacity: 0.6;
    transition: 0.1s;
-}
-nav a {
-    color: white;
 }
 button{
     background-color: #212529;
@@ -93,11 +93,40 @@ button{
     border: none;
     cursor: pointer;
     font-size: 1.2rem;
-    margin-top: 4rem;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
     padding: 1rem 2rem;
     transition: .2s;
 } 
 button:hover{
     opacity: 0.8;
 } 
+span {
+    padding: 0.7rem 1rem;
+    cursor: pointer;
+    transition: 0.2s; 
+
+} 
+span:hover{
+ background-color:#4A4F54 ;
+} 
+.collab:hover{
+    transform:scale(1.05); 
+}
+
+/*-------Dark Mode Styling----------  */
+
+  .dark-mode .page {
+    background-color: #212529;
+    color: white;
+  }
+  .dark-mode nav {
+    border: 1px solid #f0f8ff;
+  }.dark-mode button {
+    border: 0.5px solid #f0f8ff;
+  }
+
+
+
+
 
