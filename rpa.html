@@ -17,9 +17,7 @@
              text-decoration: none;}
          .page{
             background-color:#f0f8ff ;
-            padding: 2rem 5rem;
-            background-color: #212529;
-            color: white;
+            padding: 1rem 5rem;
             }
        nav{
            display: flex;
@@ -44,17 +42,18 @@
         transform:scale(1.05);
        }
        nav a:hover{
-           background-color: rgba(63, 63, 63, 1);
+        background-color: rgba(63, 63, 63, 1);
+
        }
        h3{
         font-size: 3rem;
         font-weight: 300;
-        margin-top: 3rem;
-        margin-bottom: 0.5rem;
+        margin-top: 1.50rem;
+        margin-bottom:1.15rem;
        }
       p{
           font-size: 1.25rem;
-          font-weight: 310;
+          font-weight: 325;
           margin: 1.5rem 0;
         }
        ul{
@@ -62,12 +61,82 @@
         font-size: 1.1rem;
         font-weight: 350;
        }
-       img{
+       div img{
         width: 100%;
-        height: auto;
-        filter: blur(8.5px);
-       } 
+        height: 100%;
+       }
+       #sec-child-2 img{
+        width: 95%;
+        height: 95%;
+       }
+       .sec{
+        display: flex;
+        padding: 0 2.5rem;
+       }
+       .sec:hover{
+         background-color: #6c7d89;
+         opacity: 0.8;
+         box-shadow : 0 0 10px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.15), 0 0 30px rgba(255, 255, 255, 0.1);
+         border-radius: 10px;
+        } 
+       .child-div-2:hover{
+        filter:drop-shadow(0 0 0.5rem #212529);
+        transition: 0.2s;
+       }
+       h3:hover{
+        transform: scale3d(1.05, 1.05, 1.05);
+        transition: 0.2s;
+        font-weight: 325;
+       }
+       p:hover,ul:hover{
+        transform: scale3d(1.05, 1.05, 1.05);
+        transition: 0.2s;
+       }
+       .child-div-1{
+        width: 50%;
+        }
+        .child-div-2{
+         width: 50%;   
+        }
+        button{
+         background-color: #212529;
+         color: #f0f8ff;
+         border: none;
+         cursor: pointer;
+         font-size: 1.2rem;
+         margin:3rem 0rem;
+         padding: 1rem 2rem;
+         transition: .2s;
+        }
+        button:hover{
+         opacity: 0.8;
+        }
+        
+        /*-------Dark Mode Styling----------  */
 
+        .dark-mode .page {
+         background-color: #212529;
+         color: white;
+        }
+        .dark-mode nav {
+         border: 1px solid #f0f8ff;
+        }
+        .dark-mode button {
+         border: 0.5px solid #f0f8ff;
+        }
+        .dark-mode button:hover {
+         background-color: #4A4F54;
+         box-shadow : 0 0 10px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.15), 0 0 30px rgba(255, 255, 255, 0.1);
+        }
+        .dark-mode .child-div-2:hover {
+         transition: 0.2s;   
+         scale: 1.05;
+        }
+        .dark-mode .sec:hover {
+         background-color: #4c5963;
+         border-radius: 10px;
+         box-shadow : 0 0 10px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.15), 0 0 30px rgba(255, 255, 255, 0.1);
+      }
 
     </style>    
 </head>
@@ -80,31 +149,50 @@
            </nav>
         </header>
         <div class="page">
-            <div>
+            <div class="sec">
+                <div class="child-div-1">
                  <h3>What is RPA</h3>
                  <p>Robotic process automation (RPA) is a software technology that makes it easy to build, deploy, and manage software robots that emulate humans actions interacting with digital systems and software.</p>
-                 <img src="img/rpa2.jpg" alt="this is image">
+                </div>
+                <div class="child-div-2">
+                    <img src="img/rpa.png" alt="this is image">
+                </div>  
             </div>
-            <div>
-                <h3>AI and RPA</h3>
-                <p>With RPA's ability to handle routine tasks and AI's cognitive capabilities, you can streamline workflows, increase efficiency, and supercharge productivity. Ready to unlock the full potential of AI-powered automations and take your business to new heights? Let us show you how.</p>
+            <div class="sec">
+                <div class="child-div-2" id="sec-child-2">
+                    <img src="img/rpa-ai.png" alt="this is image">
+                </div>
+                <div class="child-div-1">
+                    <h3>AI and RPA</h3>
+                    <p>With RPA's ability to handle routine tasks and AI's cognitive capabilities, you can streamline workflows, increase efficiency, and supercharge productivity. Ready to unlock the full potential of AI-powered automations and take your business to new heights? Let us show you how.</p>
+                </div>
+            </div>
+           <div class="sec">
+                <div class="child-div-1">
+                   <h3>Where can RPA<br> be used?</h3>
+                   <p>With AI, RPA robots can emulate a wide range of the decision making and problem solving that people do—which expands the range of work that you can automate. </p>
+                   <ul>
+                      <li>Banking and finance process automation</li>
+                      <li><a href="https://en.wikipedia.org/wiki/Optical_character_recognition">Optical character recognition</a> applications</li>
+                      <li>Supply chain and logistics</li>
+                      <li><a href="https://en.wikipedia.org/wiki/Data_extraction">extraction</a> process</li>
+                      <li>Fixed automation process</li>
+                  </ul>
+                 </div> 
+                 <div class="child-div-2">
+                    <img src="img/rpa-app.png" alt="this is image">
+                 </div>    
            </div>
-           <div>
-                <h3>Why is RPA transformative?</h3>
-                <p>Software robots—instead of people—do repetitive and lower-value work, like logging into applications and systems, moving files and folders, extracting, copying, and inserting data, filling in forms, and completing routine analyses and reports.When robots do these types of repetitive, high-volume tasks, humans are freed to focus on the things they do best and enjoy more: innovating, collaborating, creating, and interacting with customers. Enterprises get a boost too: higher productivity, efficiency, and resilience. It’s no wonder that RPA is rewriting the story of work.</p>
-           </div>
-           <div>
-                <h3>Where can RPA be used?</h3>
-                <p>With AI, RPA robots can emulate a wide range of the decision making and problem solving that people do—which expands the range of work that you can automate. </p>
-                <ul>
-                    <li>Banking and finance process automation</li>
-                    <li><a href="https://en.wikipedia.org/wiki/Optical_character_recognition">Optical character recognition</a> applications</li>
-                    <li>Supply chain and logistics</li>
-                    <li><a href="https://en.wikipedia.org/wiki/Data_extraction">extraction</a> process</li>
-                    <li>Fixed automation process</li>
-                </ul>
-           </div>
+           <div class="darkMode">
+            <button onclick="darkMode()">Toggle Night Mode</button>
+          </div>
         </div>
     </div>
+    <script>
+        function darkMode() {
+        const body = document.querySelector('body');
+        body.classList.toggle('dark-mode');
+        }
+    </script>
 </body>
 </html>

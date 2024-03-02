@@ -131,7 +131,9 @@ span:hover{
   }.dark-mode button {
     border: 0.5px solid #f0f8ff;
   }
-
+  .dark-mode button:hover {
+    background-color: #4A4F54;
+   }
 
 
   /*-------Meadia query styling----------  */
