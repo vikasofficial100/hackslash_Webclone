@@ -1,7 +1,6 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: Roboto Slab,serif;
 }
 
@@ -22,7 +21,7 @@
     font-size: 1.5rem;
     color: white;
     cursor: pointer;
-    transition: .2s
+    transition: .2s;
 }
 nav a{
     text-decoration: none;
@@ -30,6 +29,8 @@ nav a{
     font-size: 1rem;
     padding: 1rem 0.75rem;
     color: white;
+    height: 100%;
+    width: 100%;
 }
 .services{
     display: flex;
@@ -40,14 +41,15 @@ nav a{
 }
 .services-info-2{
     width: 50%;
-    transform-style: preserve-3d;
-    transition: transform 1s;
+   
 }
 .child-ser-info{
     display: flex;
 }
 .image{
    width:100%;
+   transform-style: preserve-3d;
+   transition: transform 1s;
 }
 #img1{
     padding-top: 3.5rem;
@@ -75,18 +77,6 @@ p{
     margin-right: 2.2rem;
     cursor: pointer;
 }
-.services-info-2:hover{
-    transform:rotateY(180deg);
-}
-div h2:hover{
-    transform: scale(1.03);
-    font-weight: 305;
-    transition: 0.1s;
-}
-p:hover{
-   opacity: 0.6;
-   transition: 0.1s;
-}
 button{
     background-color: #212529;
     color: #f0f8ff;
@@ -97,6 +87,22 @@ button{
     margin-bottom: 4rem;
     padding: 1rem 2rem;
     transition: .2s;
+}
+.menu,#menu{
+display: none;
+}
+/* ---------------Hovering stylings------------------ */
+.image:hover{
+    transform:rotateY(180deg);
+}
+div h2:hover{
+    transform: scale(1.03);
+    font-weight: 305;
+    transition: 0.1s;
+}
+p:hover{
+   opacity: 0.6;
+   transition: 0.1s;
 } 
 button:hover{
     opacity: 0.8;
@@ -111,7 +117,7 @@ span:hover{
  background-color:#4A4F54 ;
 } 
 .collab:hover{
-    transform:scale(1.05); 
+    transform:scale(1.05);
 }
 
 /*-------Dark Mode Styling----------  */
@@ -128,5 +134,49 @@ span:hover{
 
 
 
+  /*-------Meadia query styling----------  */
+    @media (max-width: 960px) {
+        nav span{
+            display: none;
+        } 
+        #menu{
+            display: block;
+            color: white;
+        }
+        #menu:hover{
+            transform:scale(1.2); 
+            transition: .2s;
+        }
+        html{
+            font-size: 85%;
+        }
+    }
+    @media (max-width: 778px) {
+        .page{
+            padding-left: 5rem;
+            padding-right: 5rem;
+        }
+        .services{
+            flex-direction: column;
+            align-items: center;
+        }
+        .services-info-1{
+            width: 100%;
+        }
+        .services-info-2{
+            width: 100%;
+            margin-top: 2rem;
+        }
+        #img1{
+            padding-top: 0rem;
+        }
+        
+        br{
+            display: none;
+        }
+        p{
+            color: blue;
+        }
+    }
 
-
+    /* ----------Dropdown Menu------------ */
