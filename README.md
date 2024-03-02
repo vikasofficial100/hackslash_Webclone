@@ -19,3 +19,8 @@ Today I added Dark mode
 Today I make this webpage responsive and Added more pages to it
 <img width="385" alt="Screenshot 2024-03-02 110550" src="https://github.com/vikasofficial100/hackslash_Webclone/assets/147232756/9753d0f9-a209-41f9-90ce-136dd43747af">
 
+#DAY 4(02/March)
+Added new page
+<img width="960" alt="Screenshot 2024-03-02 134515" src="https://github.com/vikasofficial100/hackslash_Webclone/assets/147232756/40bde81c-0576-46a2-83fc-076c4632666b">
+
+
