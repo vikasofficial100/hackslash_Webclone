@@ -23,4 +23,9 @@ Today I make this webpage responsive and Added more pages to it
 Added new page
 <img width="960" alt="Screenshot 2024-03-02 134515" src="https://github.com/vikasofficial100/hackslash_Webclone/assets/147232756/40bde81c-0576-46a2-83fc-076c4632666b">
 
+#DAY 4(02/March)
+Made second page responsive and improved ui
+<img width="426" alt="Screenshot 2024-03-02 230456" src="https://github.com/vikasofficial100/hackslash_Webclone/assets/147232756/6e780023-0db7-4054-8362-2c451435c695">
+
+
 
