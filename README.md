@@ -14,3 +14,8 @@ today I completed animation and corrected UI of webpage
 #DAY 3(28/Feb)
 Today I added Dark mode
 <img width="960" alt="Screenshot 2024-02-28 203228" src="https://github.com/vikasofficial100/hackslash_Webclone/assets/147232756/2c1d14c1-7e28-43f2-a599-f8fa8fb30487">
+
+#DAY 4(02/March)
+Today I make this webpage responsive and Added more pages to it
+<img width="385" alt="Screenshot 2024-03-02 110550" src="https://github.com/vikasofficial100/hackslash_Webclone/assets/147232756/9753d0f9-a209-41f9-90ce-136dd43747af">
+
