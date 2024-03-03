@@ -27,5 +27,9 @@ Added new page
 Made second page responsive and improved ui
 <img width="426" alt="Screenshot 2024-03-02 230456" src="https://github.com/vikasofficial100/hackslash_Webclone/assets/147232756/6e780023-0db7-4054-8362-2c451435c695">
 
+#DAY 5(03/March)
+Made another page (DevOps Page)
+<img width="960" alt="Screenshot 2024-03-03 111407" src="https://github.com/vikasofficial100/hackslash_Webclone/assets/147232756/02ea85b2-5ebf-43d3-91da-8b7e0e6972ae">
+
 
 
