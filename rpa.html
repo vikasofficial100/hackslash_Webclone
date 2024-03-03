@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <title>Document</title>
-    <style>
+    <style>   /* -------to avoid confusion because of so many files i made styles and script in same html file-------     */
          *{
               margin: 0;
               padding: 0;
@@ -185,7 +185,7 @@
                <span><a href="https://en.wikipedia.org/wiki/Robotic_process_automation">Explore</a></span>
            </nav>
         </header>
-        <div class="page">
+        <div class="page">   <!-- body start here which contains 3 main sections having class sec  which further contains two sub section which contais a img and paragara -------->
             <div class="sec">
                 <div class="child-div-1">
                  <h3>What is <span class="RPA-text">RPA</span>?</h3>
@@ -220,14 +220,14 @@
                     <img src="img/rpa-app.png" alt="this is image">
                  </div>    
            </div>
-           <div class="darkMode">
+           <div class="darkMode">   <!-- Button to toggle dark mode which contains a simple function of javascript -->
             <button onclick="darkMode()">Toggle Night Mode</button>
           </div>
         </div>
     </div>
     <script>
         function darkMode() {
-        const body = document.querySelector('body');
+        const body = document.querySelector('body'); //Explanation is given script.js file as same logic is used everywhere to toggle between dark and light mode
         body.classList.toggle('dark-mode');
         }
     </script>

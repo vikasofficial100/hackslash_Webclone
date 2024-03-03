@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <title>Document</title>
     <style>
-         *{
+         *{        /* -------to avoid confusion because of so many files i made styles and script in same html file-------     */
               margin: 0;
               padding: 0;
               font-family: Roboto Slab,serif;
@@ -178,14 +178,14 @@
     </style>    
 </head>
 <body>
-    <div class="main">
+    <div class="main">    <!-- header start here -------->
         <header>
            <nav>
                <h4 id="dev">DevOps</h4>
                <span><a href="https://en.wikipedia.org/wiki/DevOps">Explore</a></span>
            </nav>
         </header>
-        <div class="page">
+        <div class="page">    <!-- body start here which contains 3 main sections having class sec  which further contains two sub section which contais a img and paragara -------->
             <div class="sec">
                 <div class="child-div-1">
                  <h3>What is<span class="dev-text"> DevOps</span></h3>
@@ -227,15 +227,15 @@
                  <div class="child-div-2">
                     <img src="img/dev-cloud.png" alt="this is image">
                  </div>    
-           </div>
+           </div>     
            <div class="darkMode">
-            <button onclick="darkMode()">Toggle Night Mode</button>
+            <button onclick="darkMode()">Toggle Night Mode</button><!-- Button to toggle dark mode which contains a simple function of javascript -->
           </div>
         </div>
     </div>
     <script>
         function darkMode() {
-        const body = document.querySelector('body');
+        const body = document.querySelector('body');    //Explanation is given script.js file as same logic is used everywhere to toggle between dark and light mode
         body.classList.toggle('dark-mode');
         }
     </script>

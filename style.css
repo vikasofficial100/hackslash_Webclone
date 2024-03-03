@@ -1,4 +1,5 @@
-*{
+                /*-------------------------Styling for home page-----------------------------------*/
+ *{                                              
     margin: 0;
     padding: 0;
     font-family: Roboto Slab,serif;
@@ -9,6 +10,12 @@
     padding-right: 5rem;
     background-color: #F0F8FF;
 }
+.collab{
+    font-size: 1.5rem;
+   color: white;       /* it is styling of heading present at top ie in header */
+    cursor: pointer;
+    transition: .2s;
+}
  nav {
    
     display: flex;
@@ -17,12 +24,7 @@
     background-color: #212529;
     padding: 1rem 2rem;
 }   
-.collab{
-    font-size: 1.5rem;
-    color: white;
-    cursor: pointer;
-    transition: .2s;
-}
+
 nav a{
     text-decoration: none;
     color: rgb(30, 30, 30);
@@ -38,7 +40,7 @@ nav a{
 }
 .services-info-1{
     width: 50%;
-}
+}                                  /* diving the main section class name as sevices in 2 part width of 50% */
 .services-info-2{
     width: 50%;
    
@@ -91,6 +93,12 @@ button{
 .menu,#menu{
 display: none;
 }
+span {
+    padding: 0.7rem 1rem;
+    cursor: pointer;                       /* there is only 4 span present in nav bar.It contains an a tag for navigation */
+    transition: 0.2s; 
+
+} 
 /* ---------------Hovering stylings------------------ */
 .image:hover{
     transform:rotateY(180deg);
@@ -106,12 +114,6 @@ p:hover{
 } 
 button:hover{
     opacity: 0.8;
-} 
-span {
-    padding: 0.7rem 1rem;
-    cursor: pointer;
-    transition: 0.2s; 
-
 } 
 span:hover{
  background-color:#4A4F54 ;
@@ -139,10 +141,11 @@ span:hover{
 
 
   /*-------Meadia query styling----------  */
-    @media (max-width: 960px) {
-        nav span{
+    @media (max-width: 960px) {               /*------there are 2 media query breakdown present in this css filw----------
+                                                in first only font size is reduced to 85% but in 2nd breakdown childs of services class covers 100% of width -----*/
+        nav span{                            /* for small screen size the span will be not be display insted a menu id name ,icon will be displayed */
             display: none;
-        } 
+        }                                 
         #menu{
             display: block;
             color: white;
@@ -186,7 +189,7 @@ span:hover{
         }
     }
 
-    /* ----------Dropdown Menu------------ */
+    /* ----------Dropdown Menu stylings------------ */
     .dropdown-container{
         position: relative;
         display: inline-block;
@@ -215,7 +218,7 @@ span:hover{
     }                                
                                                       
     .dark-mode .dropdown-content a{
-        background-color: #212529;        /* dropdown properties for dark mode */
+        background-color: #212529;        /*------------- dropdown properties for dark mode-------- */
         color: white;
     } 
     .dark-mode .dropdown-content a:hover{
