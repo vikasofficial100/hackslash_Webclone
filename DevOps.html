@@ -13,9 +13,12 @@
               padding: 0;
               font-family: Roboto Slab,serif;
          }
+         a{
+             text-decoration: none;}
          .page{
-            background-color:#f0f8ff ;
-         }
+            background-color: #f0f8ff;
+            padding: 1rem 5rem;
+            }
        nav{
            display: flex;
            justify-content: space-between;
@@ -23,48 +26,219 @@
            padding: 1rem 2rem;
            background-color: #212529;
        }
-       a{
+       nav a{
            color: white;
            text-decoration: none;
            background-color: rgba(63, 63, 63, 0.5);
            padding: .5rem 1rem;
        }
-       #rpa{
+       #dev{
         font-size: 1.5rem;
         color: white;
         cursor: pointer;
         transition: .2s
        }
-       #rpa:hover{
+       #dev:hover{
         transform:scale(1.05);
        }
-       a:hover{
-           background-color: rgba(63, 63, 63, 1);
+       nav a:hover{
+        background-color: rgba(63, 63, 63, 1);
+
        }
+       h3{
+        font-size: 3rem;
+        font-weight: 300;
+        margin-top: 1.50rem;
+        margin-bottom:1.15rem;
+       }
+      p{
+          font-size: 1.25rem;
+          font-weight: 325;
+          margin: 1.5rem 0;
+        }
+       ul{
+        margin-left:1rem;
+        font-size: 1.1rem;
+        font-weight: 350;
+       }
+       div img{
+        width: 100%;
+        height: 100%;
+       }
+       .sec{
+        display: flex;
+        padding: 0 2.5rem;
+       }
+       .sec:hover{
+         background-color: #f0f8ff;
+         opacity: 0.95;
+         box-shadow: 0 0 10px #c9e6ffc3,0 0 20px #c9e6ffa1,0 0 30px #c9e6ff67 ;
+         border-radius: 10px;
+        }
+        #sec-3{
+            padding-bottom: 2rem;
+        } 
+       .child-div-2:hover{
+        filter:drop-shadow(0 0 0.5rem #212529);
+        transition: 0.2s;
+       }
+       h3:hover{
+        transform: scale3d(1.05, 1.05, 1.05);
+        transition: 0.2s;
+        font-weight: 325;
+       }
+       p:hover,ul:hover{
+        transform: scale3d(1.05, 1.05, 1.05);
+        transition: 0.2s;
+       }
+       .child-div-1{
+        width: 50%;
+        }
+        .child-div-2{
+         width: 50%;   
+        }
+        button{
+         background-color: #212529;
+         color: #f0f8ff;
+         border: none;
+         cursor: pointer;
+         font-size: 1.2rem;
+         margin:3rem 0rem;
+         padding: 1rem 2rem;
+         transition: .2s;
+        }
+        button:hover{
+         opacity: 0.8;
+        }
+        .dev-text{
+         color: #7992f9;
+         margin:0rem 0.7rem;
+        }
+        .cloud-text{
+         color: #D23E3B;
+         margin-right: 0.7rem;
+        }
+        
+        /*-------Dark Mode Styling----------  */
+
+        .dark-mode .page {
+         background-color: #212529;
+         color: white;
+        }
+        .dark-mode nav {
+         border: 1px solid #f0f8ff;
+        }
+        .dark-mode button {
+         border: 0.5px solid #f0f8ff;
+        }
+        .dark-mode button:hover {
+         background-color: #4A4F54;
+         box-shadow : 0 0 10px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.15), 0 0 30px rgba(255, 255, 255, 0.1);
+        }
+        .dark-mode .child-div-2:hover {
+         transition: 0.2s;   
+         scale: 1.05;
+        }
+        .dark-mode .sec:hover {
+         background-color: #202428;
+         opacity: 1;
+         border-radius: 10px;
+         box-shadow : 0 0 10px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.15), 0 0 30px rgba(255, 255, 255, 0.1);
+      }
+      /* -----------------Media Query Styling --------------------- */
+      @media (max-width: 960px) {
+        html{
+            font-size: 85%;
+         }
+        .page{
+            padding: 1rem 2rem;
+        }}
+        @media (max-width: 778px) {
+        html{
+            font-size: 75%;
+         }  
+        .page{
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+        .sec{
+            flex-direction: column;
+            align-items: center;
+        }
+        #sec-2{
+            flex-direction: column-reverse;
+        }
+        .child-div-1,.child-div-2{
+            width: 100%;
+        }
+        br{
+            display: none;
+        }
+    }
+
     </style>    
 </head>
 <body>
     <div class="main">
         <header>
            <nav>
-               <h4 id="rpa">DevOps</h4>
+               <h4 id="dev">DevOps</h4>
                <span><a href="https://en.wikipedia.org/wiki/DevOps">Explore</a></span>
            </nav>
         </header>
-        <!-- <div class="page">
-            <div>
-                 <h3>What is RPA</h3>
+        <div class="page">
+            <div class="sec">
+                <div class="child-div-1">
+                 <h3>What is<span class="dev-text">DevOps</span></h3>
+                 <p>A compound of development (Dev) and operations (Ops), DevOps is the union of people, process, and 
+                    technology to continually provide value to customers.There are following benifits of DevOps:
+                    <ul>
+                        <li>Accelerating time to market</li>
+                        <li>Adapting to the market and competition</li>
+                        <li>Maintaining system stability and reliability</li>
+                        <li>Improving the mean time to recovery</li>
+                    </ul>
+                </p>
+                </div>
+                <div class="child-div-2">
+                    <img src="img/devops.png" alt="this is image">
+                </div>  
             </div>
-            <div>
-                <h3>AI and RPA</h3>
+            <div class="sec" id="sec-2">
+                <div class="child-div-2" id="sec-child-2">
+                    <img src="img/dev-tools.png" alt="this is image">
+                </div>
+                <div class="child-div-1" id="sec-child-1">
+                    <h3><span class="dev-text">DevOps</span>tools</h3>
+                    <p>Teams have many DevOps tools to help them facilitate a DevOps culture in their organization. Most teams rely on several tools, building custom toolchains that fit their needs for each phase in the application lifecycle. While adopting a specific tool or technology is 
+                        not the same as adopting DevOps, when the DevOps culture is present and the processes are defined, people can implement and streamline DevOps practices if they choose the proper tools.<a href="https://www.atlassian.com/devops/devops-tools"> Learn more</a> about DevOps tools and technologies.
+                    </p>
+                </div>
+            </div>
+           <div class="sec" id="sec-3">
+                <div class="child-div-1">
+                   <h3><span class="dev-text">DevOps</span>and the <span class="cloud-text">Cloud</span></h3>
+                   <p>Cloud adoption has fundamentally transformed the way teams are building, deploying, and operating applications. Together with the adoption of DevOps, teams now have greater opportunity to improve their practices and better serve their customers better.</p>
+                   <ul>
+                      <li><a href="https://cloud.google.com/learn/what-is-cloud-computing">Cloud computing</a></li>
+                      <li><a href="https://azure.microsoft.com/en-in/resources/cloud-computing-dictionary/what-is-kubernetes/#watch-how-kubernetes-works">Kubernetes</a></li>
+                      <li>Serverless computing</li>
+                  </ul>
+                 </div> 
+                 <div class="child-div-2">
+                    <img src="img/dev-cloud.png" alt="this is image">
+                 </div>    
            </div>
-           <div>
-                <h3>Why is RPA transformative?</h3>
-           </div>
-           <div>
-                <h3>Where can RPA be used?</h3>
-           </div>
-        </div> -->
+           <div class="darkMode">
+            <button onclick="darkMode()">Toggle Night Mode</button>
+          </div>
+        </div>
     </div>
+    <script>
+        function darkMode() {
+        const body = document.querySelector('body');
+        body.classList.toggle('dark-mode');
+        }
+    </script>
 </body>
 </html>

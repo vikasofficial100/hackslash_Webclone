@@ -13,9 +13,12 @@
               padding: 0;
               font-family: Roboto Slab,serif;
          }
+         a{
+             text-decoration: none;}
          .page{
-            background-color:#f0f8ff ;
-         }
+            background-color: #f0f8ff;
+            padding: 1rem 5rem;
+            }
        nav{
            display: flex;
            justify-content: space-between;
@@ -23,7 +26,7 @@
            padding: 1rem 2rem;
            background-color: #212529;
        }
-       a{
+       nav a{
            color: white;
            text-decoration: none;
            background-color: rgba(63, 63, 63, 0.5);
@@ -38,33 +41,197 @@
        #rpa:hover{
         transform:scale(1.05);
        }
-       a:hover{
-           background-color: rgba(63, 63, 63, 1);
+       nav a:hover{
+        background-color: rgba(63, 63, 63, 1);
+
        }
+       h3{
+        font-size: 3rem;
+        font-weight: 300;
+        margin-top: 1.50rem;
+        margin-bottom:1.15rem;
+       }
+      p{
+          font-size: 1.25rem;
+          font-weight: 325;
+          margin: 1.5rem 0;
+        }
+       ul{
+        margin-left:1rem;
+        font-size: 1.1rem;
+        font-weight: 350;
+       }
+       div img{
+        width: 100%;
+        height: 100%;
+       }
+       #sec-child-2 img{
+        width: 95%;
+        height: 95%;
+       }
+       .sec{
+        display: flex;
+        padding: 0 2.5rem;
+       }
+       .sec:hover{
+         background-color: #f0f8ff;
+         opacity: 0.95;
+         box-shadow: 0 0 10px #c9e6ffc3,0 0 20px #c9e6ffa1,0 0 30px #c9e6ff67 ;
+         border-radius: 10px;
+        } 
+       .child-div-2:hover{
+        filter:drop-shadow(0 0 0.5rem #212529);
+        transition: 0.2s;
+       }
+       h3:hover{
+        transform: scale3d(1.05, 1.05, 1.05);
+        transition: 0.2s;
+        font-weight: 325;
+       }
+       p:hover,ul:hover{
+        transform: scale3d(1.05, 1.05, 1.05);
+        transition: 0.2s;
+       }
+       .child-div-1{
+        width: 50%;
+        }
+        .child-div-2{
+         width: 50%;   
+        }
+        button{
+         background-color: #212529;
+         color: #f0f8ff;
+         border: none;
+         cursor: pointer;
+         font-size: 1.2rem;
+         margin:3rem 0rem;
+         padding: 1rem 2rem;
+         transition: .2s;
+        }
+        button:hover{
+         opacity: 0.8;
+        }
+        .RPA-text{
+         color: #7992f9;
+         margin:0rem 0.7rem;
+        }
+        .AI-text{
+         color: #D23E3B;
+         margin-right: 0.7rem;
+        }
+        
+        /*-------Dark Mode Styling----------  */
+
+        .dark-mode .page {
+         background-color: #212529;
+         color: white;
+        }
+        .dark-mode nav {
+         border: 1px solid #f0f8ff;
+        }
+        .dark-mode button {
+         border: 0.5px solid #f0f8ff;
+        }
+        .dark-mode button:hover {
+         background-color: #4A4F54;
+         box-shadow : 0 0 10px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.15), 0 0 30px rgba(255, 255, 255, 0.1);
+        }
+        .dark-mode .child-div-2:hover {
+         transition: 0.2s;   
+         scale: 1.05;
+        }
+        .dark-mode .sec:hover {
+         background-color: #202428;
+         opacity: 1;
+         border-radius: 10px;
+         box-shadow : 0 0 10px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.15), 0 0 30px rgba(255, 255, 255, 0.1);
+      }
+      /* -----------------Media Query Styling --------------------- */
+      @media (max-width: 960px) {
+        html{
+            font-size: 85%;
+         }
+        .page{
+            padding: 1rem 2rem;
+        }}
+        @media (max-width: 778px) {
+        html{
+            font-size: 75%;
+         }  
+        .page{
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+        .sec{
+            flex-direction: column;
+            align-items: center;
+        }
+        #sec-2{
+            flex-direction: column-reverse;
+        }
+        .child-div-1,.child-div-2{
+            width: 100%;
+        }
+        br{
+            display: none;
+        }
+    }
+
     </style>    
 </head>
 <body>
     <div class="main">
         <header>
            <nav>
-               <h4 id="rpa">Cloud Services</h4>
-               <span><a href="https://cloud.google.com/free/?utm_source=bing&utm_medium=cpc&utm_campaign=japac-IN-all-en-dr-skws-all-pkws-trial-e-dr-1009882&utm_content=text-ad-none-none-DEV_c-CRE_-ADGP_Hybrid+%7C+SKWS+-+EXA+%7C+Txt+~+GCP_Cloud+Generic_cloud+provider_main-KWID_43700079469887997-kwd-71881371285450:loc-90&userloc_150008-network_o&utm_term=KW_cloud%20provider&gclid=623503b5042d164fdc7c6654ba83e5de&gclsrc=3p.ds">Explore</a></span>
+               <h4 id="rpa">AI + RPA Automation</h4>
+               <span><a href="https://en.wikipedia.org/wiki/Robotic_process_automation">Explore</a></span>
            </nav>
         </header>
-        <!-- <div class="page">
-            <div>
-                 <h3>What is RPA</h3>
+        <div class="page">
+            <div class="sec">
+                <div class="child-div-1">
+                 <h3>What is<span class="RPA-text">RPA</span></h3>
+                 <p>Robotic process automation (RPA) is a software technology that makes it easy to build, deploy, and manage software robots that emulate humans actions interacting with digital systems and software.</p>
+                </div>
+                <div class="child-div-2">
+                    <img src="img/rpa.png" alt="this is image">
+                </div>  
             </div>
-            <div>
-                <h3>AI and RPA</h3>
+            <div class="sec" id="sec-2">
+                <div class="child-div-2" id="sec-child-2">
+                    <img src="img/rpa-ai.png" alt="this is image">
+                </div>
+                <div class="child-div-1" id="sec-child-1">
+                    <h3><span class="AI-text">AI</span>and<span class="RPA-text">RPA</span></h3>
+                    <p>With RPA's ability to handle routine tasks and AI's cognitive capabilities, you can streamline workflows, increase efficiency, and supercharge productivity. Ready to unlock the full potential of AI-powered automations and take your business to new heights? Let us show you how.</p>
+                </div>
+            </div>
+           <div class="sec">
+                <div class="child-div-1">
+                   <h3>Where can<span class="RPA-text">RPA</span><br> be used?</h3>
+                   <p>With AI, RPA robots can emulate a wide range of the decision making and problem solving that people do—which expands the range of work that you can automate. </p>
+                   <ul>
+                      <li>Banking and finance process automation</li>
+                      <li><a href="https://en.wikipedia.org/wiki/Optical_character_recognition">Optical character recognition</a> applications</li>
+                      <li>Supply chain and logistics</li>
+                      <li><a href="https://en.wikipedia.org/wiki/Data_extraction">extraction</a> process</li>
+                      <li>Fixed automation process</li>
+                  </ul>
+                 </div> 
+                 <div class="child-div-2">
+                    <img src="img/rpa-app.png" alt="this is image">
+                 </div>    
            </div>
-           <div>
-                <h3>Why is RPA transformative?</h3>
-           </div>
-           <div>
-                <h3>Where can RPA be used?</h3>
-           </div>
-        </div> -->
+           <div class="darkMode">
+            <button onclick="darkMode()">Toggle Night Mode</button>
+          </div>
+        </div>
     </div>
+    <script>
+        function darkMode() {
+        const body = document.querySelector('body');
+        body.classList.toggle('dark-mode');
+        }
+    </script>
 </body>
 </html>
