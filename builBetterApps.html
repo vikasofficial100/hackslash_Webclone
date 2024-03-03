@@ -6,16 +6,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
-    <title>Document</title>
+    <title>Cloud Services</title>
     <style>
          *{
               margin: 0;
               padding: 0;
               font-family: Roboto Slab,serif;
          }
+         a{
+             text-decoration: none;}
          .page{
-            background-color:#f0f8ff ;
-         }
+            background-color: #f0f8ff;
+            padding: 1rem 5rem;
+            }
        nav{
            display: flex;
            justify-content: space-between;
@@ -23,7 +26,7 @@
            padding: 1rem 2rem;
            background-color: #212529;
        }
-       a{
+       nav a{
            color: white;
            text-decoration: none;
            background-color: rgba(63, 63, 63, 0.5);
@@ -38,9 +41,149 @@
        #rpa:hover{
         transform:scale(1.05);
        }
-       a:hover{
-           background-color: rgba(63, 63, 63, 1);
+       nav a:hover{
+        background-color: rgba(63, 63, 63, 1);
+
        }
+       h3{
+        font-size: 3rem;
+        font-weight: 300;
+        margin-top: 1.50rem;
+        margin-bottom:1.15rem;
+       }
+      p{
+          font-size: 1.25rem;
+          font-weight: 325;
+          margin: 1.5rem 0;
+        }
+       ul{
+        margin-left:1rem;
+        font-size: 1.1rem;
+        font-weight: 350;
+       }
+       div img{
+        width: 100%;
+        height: 100%;
+       }
+       #sec-child-2 img{
+        width: 95%;
+        height: 95%;
+       }
+       #sec-3 img{
+        width: 100%;
+        height: 90%;
+        padding-top: 2.5rem;
+       }
+
+       #sec-3{
+        padding-bottom:2.5rem;
+       }
+       .sec{
+        display: flex;
+        padding: 0 2.5rem;
+       }
+       .sec:hover{
+         background-color: #f0f8ff;
+         opacity: 0.95;
+         box-shadow: 0 0 10px #c9e6ffc3,0 0 20px #c9e6ffa1,0 0 30px #c9e6ff67 ;
+         border-radius: 10px;
+        } 
+       .child-div-2:hover{
+        filter:drop-shadow(0 0 0.5rem #212529);
+        transition: 0.2s;
+       }
+       h3:hover{
+        transform: scale3d(1.05, 1.05, 1.05);
+        transition: 0.2s;
+        font-weight: 325;
+       }
+       p:hover,ul:hover{
+        transform: scale3d(1.05, 1.05, 1.05);
+        transition: 0.2s;
+       }
+       .child-div-1{
+        width: 50%;
+        }
+        .child-div-2{
+         width: 50%;   
+        }
+        button{
+         background-color: #212529;
+         color: #f0f8ff;
+         border: none;
+         cursor: pointer;
+         font-size: 1.2rem;
+         margin:3rem 0rem;
+         padding: 1rem 2rem;
+         transition: .2s;
+        }
+        button:hover{
+         opacity: 0.8;
+        }
+        .cloud-text{
+         color: #2A59D8;
+        }
+        .cloud-comp{
+         color: #D23E3B;
+        }
+        
+        /*-------Dark Mode Styling----------  */
+
+        .dark-mode .page {
+         background-color: #212529;
+         color: white;
+        }
+        .dark-mode nav {
+         border: 1px solid #f0f8ff;
+        }
+        .dark-mode button {
+         border: 0.5px solid #f0f8ff;
+        }
+        .dark-mode button:hover {
+         background-color: #4A4F54;
+         box-shadow : 0 0 10px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.15), 0 0 30px rgba(255, 255, 255, 0.1);
+        }
+        .dark-mode .child-div-2:hover {
+         transition: 0.2s;   
+         scale: 1.05;
+        }
+        .dark-mode .sec:hover {
+         background-color: #202428;
+         opacity: 1;
+         border-radius: 10px;
+         box-shadow : 0 0 10px rgba(255, 255, 255, 0.2), 0 0 20px rgba(255, 255, 255, 0.15), 0 0 30px rgba(255, 255, 255, 0.1);
+      }
+      /* -----------------Media Query Styling --------------------- */
+      @media (max-width: 960px) {
+        html{
+            font-size: 85%;
+         }
+        .page{
+            padding: 1rem 2rem;
+        }}
+        @media (max-width: 778px) {
+        html{
+            font-size: 75%;
+         }  
+        .page{
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+        }
+        .sec{
+            flex-direction: column;
+            align-items: center;
+        }
+        #sec-2{
+            flex-direction: column-reverse;
+        }
+        .child-div-1,.child-div-2{
+            width: 100%;
+        }
+        br{
+            display: none;
+        }
+    }
+
     </style>    
 </head>
 <body>
@@ -51,20 +194,58 @@
                <span><a href="https://in.search.yahoo.com/search;_ylt=Awr1QKf5vuFlEvwIESG7HAx.;_ylc=X1MDMjExNDcyMzAwMwRfcgMyBGZyA21jYWZlZQRmcjIDc2ItdG9wBGdwcmlkA0suS1BJNjJzUzZxZzcyQ2ppUHVVOEEEbl9yc2x0AzAEbl9zdWdnAzEwBG9yaWdpbgNpbi5zZWFyY2gueWFob28uY29tBHBvcwMwBHBxc3RyAwRwcXN0cmwDMARxc3RybAMxOARxdWVyeQNidWlsZCUyMGJldHRlciUyMGFwcHMlMjAEdF9zdG1wAzE3MDkyOTMzNjQ-?p=build+better+apps+&fr2=sb-top&fr=mcafee&vm=r&type=E210IN826G0">Explore</a></span>
            </nav>
         </header>
-        <!-- <div class="page">
-            <div>
-                 <h3>What is RPA</h3>
+        <div class="page">
+            <div class="sec">
+                <div class="child-div-1">
+                 <h3>Lorem ipsum <span class="cloud-text">dolor</span>?</h3>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque ipsam cum quo repellat tempore tempora, excepturi tenetur, quaerat doloribus laborum dolorum minima 
+                    recusandae sapiente quas nam ducimus pariatur suscipit natus?Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, impedit dolore vero ducimus accusamus cumque dicta minus eum reprehenderit iste nihil consectetur esse quia in, et amet quaerat, fugit laudantium?</p>
+                </div>
+                <div class="child-div-2">
+                    <img src="img/betterApps.png" alt="this is image">
+                </div>  
             </div>
-            <div>
-                <h3>AI and RPA</h3>
+            <div class="sec" id="sec-2">
+                <div class="child-div-2" id="sec-child-2">
+                    <img src="img/cloud-ser.png" alt="this is image">
+                </div>
+                <div class="child-div-1" id="sec-child-1">
+                    <h3>Lorem ipsum <span class="cloud-text">dolor sit</span></h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sit ipsam explicabo fugiat dolor nesciunt quis, odit eveniet quaerat quae hic deleniti inventore laboriosam alias ipsa itaque illo maxime autem?
+                        Illum odit fugiat neque error nisi eos consequatur nobis magni, quaerat recusandae quo, nam tenetur? Est ipsam, quos reprehenderit quis dolore reiciendis quam molestiae soluta, illum, ducimus assumenda voluptatibus consequatur!
+                        <ul>
+                            <li>Lorem ipsum (<a href="#">Lorem</a>)</li>
+                            <li>Lorem ipsum dolor sit (<a href="#">Lorem</a>)</li>
+                            <li>ipsum dolor sit ame (<a href="#">Lorem</a>)</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+           <div class="sec" id="sec-3">
+                <div class="child-div-1">
+                   <h3><span class="cloud-text">Lorem</span><span class="cloud-comp"> ipsum</span></h3>
+                   <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod, officia repellendus impedit earum sequi totam, delectus debitis a unde incidunt, consequatur exercitationem! Dolores corrupti sapiente, doloribus asperiores quod beatae earum?</p>
+                   <ul>
+                      <li>Lorem, ipsum dolor sit amet consectetur adipisicing</li>
+                      <li>Lorem, ipsum dolor sit amet consectetur</li>
+                      <li>ipsum dolor sit amet consectetur adipisicing</li>
+                  </ul>
+                 </div> 
+                 <div class="child-div-2">
+                    <img src="img/dev-cloud.png" alt="this is image">
+                 </div>    
            </div>
-           <div>
-                <h3>Why is RPA transformative?</h3>
-           </div>
-           <div>
-                <h3>Where can RPA be used?</h3>
-           </div>
-        </div> -->
+           <div class="darkMode">
+            <button onclick="darkMode()">Toggle Night Mode</button>
+          </div>
+        </div>
     </div>
+    <script>
+        function darkMode() {
+        const body = document.querySelector('body');
+        body.classList.toggle('dark-mode');
+        }
+    </script>
 </body>
 </html>
