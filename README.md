@@ -31,5 +31,10 @@ Made second page responsive and improved ui
 Made another page (DevOps Page)
 <img width="960" alt="Screenshot 2024-03-03 111407" src="https://github.com/vikasofficial100/hackslash_Webclone/assets/147232756/02ea85b2-5ebf-43d3-91da-8b7e0e6972ae">
 
+#DAY %(03/March)
+Completed dropdown menu
+<img width="514" alt="Screenshot 2024-03-03 181203" src="https://github.com/vikasofficial100/hackslash_Webclone/assets/147232756/3f25beec-9210-4334-9eef-28c22e0466b8">
+
+
 
 
