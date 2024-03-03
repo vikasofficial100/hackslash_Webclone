@@ -37,6 +37,9 @@ Completed dropdown menu
 
 #DAY 5(03/March)
 added documentation to each page and completed task 1 fully---(:
+<img width="960" alt="Screenshot 2024-03-03 235621" src="https://github.com/vikasofficial100/hackslash_Webclone/assets/147232756/aef4916a-8333-4980-b784-6e7ca870b6ca">
+
+-----------------Thank You so much ......it was fun to work on this task (:--------------
 
 
 
